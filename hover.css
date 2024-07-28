@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px;
+}
+.btn a{
+    color: rgb(205, 223, 222);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+ 
+   
+}
+.btn a:hover{
+    color: black;
+}
+.background{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(images/blur\ bg.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+   
+ }
+ 
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(244, 192, 149);
+}
+
+.content h1{
+    font-size: 100px;
+}
+.content p{
+    font-size: 30px;
+    font-style: italic;
+    margin: 20px auto;
+}
+.btn{
+    margin-left: 60%;
+   
+}
+button{
+    width: 260px;
+    height: 50px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 60px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 25px;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 1s;
+}
+button:hover span{
+    width: 100%;
+
+}
+button:hover{
+    border: none;
+    background: #009688;
+}
